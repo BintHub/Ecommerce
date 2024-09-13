@@ -8,6 +8,7 @@ import Contact from './components/contact/Contact'
 import Home from './components/home/Home'
 import Nav from './Components/Nav/Nav'
 import Shop from './components/shop/Shop'
+import Error from './components/error/Error'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path ='/shop' element={<Shop />} />
         <Route path ='/about' element={<About />} />
         <Route path ='/contact' element={<Contact />} />
+        <Route path ='/*' element={<Error />} />
       </Routes>
       <Footer/>
      
