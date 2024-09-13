@@ -1,0 +1,17 @@
+{
+    "images": {
+        "cloudName": "ddml48ptj8",
+        "image1": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867627/image_106_egaz2b.png",
+            "disc": "Dining"
+        },
+        "image2": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867503/image_100_zsswph.svg",
+            "disc": "Living"
+        },
+        "image3": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867718/Mask_Group_baolpy.svg",
+            "disc": "Bedroom"
+        }
+    }
+}

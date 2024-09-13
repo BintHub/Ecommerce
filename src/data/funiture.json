@@ -1,0 +1,42 @@
+{
+    "images": {
+        "cloudName": "ddml48ptj8",
+        "image1": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867389/Rectangle_36_osbmvo.png",
+            "disc": "text"
+        },
+        "image2": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867388/Rectangle_38_cq84mf.png",
+            "disc": "text"
+        },
+        "image3": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867389/Rectangle_37_bn1o9z.png",
+            "disc": "text"
+        },
+        "image4": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867387/Rectangle_39_xb2nzk.png",
+            "disc": "text"
+        },
+        "image5": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867389/Rectangle_40_bc9y2h.png",
+            "disc": "text"
+        },
+        "image6": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867389/Rectangle_43_oij3by.png",
+            "disc": "text"
+        },
+        "image7": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867392/Rectangle_45_pgn2nk.png",
+            "disc": "text"
+        },
+        "image8": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867390/Rectangle_41_qbhp4s.png",
+            "disc": "text"
+        },
+        "image9": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867390/Rectangle_44_n3qvgm.png",
+            "disc": "text"
+        }
+       
+    }
+}

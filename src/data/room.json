@@ -1,0 +1,17 @@
+{
+    "images": {
+        "cloudName": "ddml48ptj8",
+        "image":{
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867496/Rectangle_24_samrxy.png",
+            "disc": "text"
+        },
+        "image2": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867494/Rectangle_25_ey8l1y.png",
+            "disc": "text"
+        },
+        "image3": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867493/Rectangle_26_m06mue.png",
+            "disc": "text"
+        }
+    }
+}

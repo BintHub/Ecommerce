@@ -1,0 +1,37 @@
+{
+    "images": {
+        "cloudName": "ddml48ptj8",
+        "image1": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867623/Images_m4nguu.png",
+            "disc": "text"
+        },
+        "image2": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725983879/Images_1_f435tm.png",
+            "disc": "text"
+        },
+        "image3": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867499/image_3_mf9bmz.png",
+            "disc": "text"
+        },
+        "image4": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867500/image_4_bxj0kx.png",
+            "disc": "text"
+        },
+        "image5": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867496/image_9_kzm5km.png",
+            "disc": "text"
+        },
+        "image6": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867496/image_6_fw3gqt.png",
+            "disc": "text"
+        },
+        "image7": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867497/image_7_prycwv.png",
+            "disc": "text"
+        },
+        "image8": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867496/image_8_qtiyf3.png",
+            "disc": "text"
+        }
+    }
+}
