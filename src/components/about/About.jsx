@@ -11,13 +11,12 @@ import arrow from '../../assets/arrow.svg'
 const About = () => {
   return (
     <>
-    <div className='relative max-w-[1440px] min-h-[316px]'>
-      <Image loading='lazy'
-      cloudName= {images.cloudName}
-      publicId= {images.image6.url} />
+     <div className='relative h-[316px] flex items-center justify-center flex-col'>
+      <Image className='absolute top-8 left-0 h-[316px]' loading='lazy' cloudName="ddml48ptj8" 
+      publicId= "https://res.cloudinary.com/dml48ptj8/image/upload/v1726620703/Rectangle_1_b0r2gh.png"
+      />
       {/* overlay */}
-       <div className='absolute max-w-full min-h-1/4 top-0 left-0 mt-6 ml-60
-        sm:ml-60 sm:mt-10 md:ml-96 lg:ml-[36rem] lg:mt-20'>
+       <div className='flex items-center justify-center flex-col gap-2'>
          <div>
           <img className='pl-2' src= {logo} alt="" />
           <h1 className='font-poppins font-medium text-4xl'>Blog</h1>

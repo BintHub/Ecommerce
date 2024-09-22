@@ -35,15 +35,14 @@ const CheckOut = () => {
     }
   return (
     <>
-      <div className='relative max-w-[full] min-h-[316px] '>
-        <Image loading='lazy' cloudName="ddml48ptj8" 
-         publicId= "https://res.cloudinary.com/dml48ptj8/image/upload/v1726620703/Rectangle_1_b0r2gh.png">
-        </Image>
-        {/* overlay */}
-      <div className='absolute max-w-full min-h-1/4 top-0 left-0 mt-6 ml-60
-        sm:ml-60 sm:mt-10 md:ml-80 lg:ml-[36rem] lg:mt-[6rem]'>
-       <div>
-         <img className='pl-8' src= {logo} alt="" />
+       <div className='relative h-[316px] flex items-center justify-center flex-col mb-10'>
+      <Image className='absolute top-8 left-0 h-[316px]' loading='lazy' cloudName="ddml48ptj8" 
+      publicId= "https://res.cloudinary.com/dml48ptj8/image/upload/v1726620703/Rectangle_1_b0r2gh.png"
+      />
+      {/* overlay */}
+       <div className='flex items-center justify-center flex-col gap-2'>
+         <div>
+         <img className='ml-14' src= {logo} alt="" />
          <h1 className='font-poppins font-medium text-4xl ml-6'>Checkout</h1>
        </div>
        <div className='flex pl-4'>
