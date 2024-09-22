@@ -1,19 +1,15 @@
 import React from 'react'
-import Pagination from '../pagination/Pagination';
-import { shopData } from '../pagination/shopData';
 import  quality from '../../assets/quality.svg'
 import shipping from '../../assets/shipping.svg'
 import warranty from '../../assets/warranty.svg'
 import care from '../../assets/ccare.svg'
 
 
-const Shop = () => {
+const Pink = () => {
   return (
-  <>
-    <h1 className='text-black text-base font-poppins font-medium'>Shop</h1>
-    <Pagination itemsPerPage={16} items={shopData} />
-
-    <div className='bg-secondary mt-72 grid grid-cols-1 py-12 md:grid-cols-2 lg:grid-cols-4'>
+    <>
+    
+    <div className='bg-secondary grid grid-cols-1 py-12 md:grid-cols-2 lg:grid-cols-4'>
      <div>
       <button className='text-[#242424] flex font-poppins text-2xl font-semibold'>
         <img className='pt-1' src= {quality} alt="icon"/>
@@ -47,8 +43,8 @@ const Shop = () => {
         </div></button>
       </div>
     </div>
-</>
+    </>
   )
 }
 
-export default Shop
+export default Pink

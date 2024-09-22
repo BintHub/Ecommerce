@@ -56,17 +56,17 @@ export default () => {
           <div className='absolute bg-primary right-16 bottom-8 px-1'><Link to="/profile"><img src= {arrow} alt="" /></Link></div>
       </div>
       </SwiperSlide>
-       <SwiperSlide>
+       <SwiperSlide className=''>
       <Image loading='lazy'
       cloudName= {images.cloudName}
       publicId= {images.image2.url} />
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className=''>
       <Image loading='lazy'
       cloudName= {images.cloudName}
       publicId= {images.image3.url} />
        </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className=''>
       <Image loading='lazy'
       cloudName= {images.cloudName}
       publicId= {images.image2.url} />

@@ -1,0 +1,29 @@
+{
+    "images": {
+        "cloudName": "ddml48ptj8",
+        "image1":{
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1726623432/blog_1_xd1k18.png",
+            "disc": "text"
+        },
+        "image2":{
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1726623431/blog_2_iobeur.png",
+            "disc": "text"
+        },
+        "image3":{
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1726623431/blog_3_poqehk.png",
+            "disc": "text"
+        },
+        "image4":{
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1726623431/blog_4_b1actr.png",
+            "disc": "text"
+        },
+        "image5":{
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1726623432/blog_5_fslhvs.png",
+            "disc": "text"
+        },
+        "image6":{
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1726620703/Rectangle_1_b0r2gh.png",
+            "disc": "text"
+        }
+    }
+}

@@ -32,6 +32,34 @@
         "image8": {
             "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1725867496/image_8_qtiyf3.png",
             "disc": "text"
+        },
+        "image9": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1726879427/Group_95_xcv6dy.png",
+            "disc": "text"
+        },
+        "image10": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1726879395/Outdoor_sofa_set_2_rhrmvx.png",
+            "disc": "text"
+        },
+        "image11": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1726879395/Outdoor_sofa_set_2_1_taouus.png",
+            "disc": "text"
+        },
+        "image12": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1726879393/Stuart_sofa_1_d6q7tg.png",
+            "disc": "text"
+        },
+        "image13": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1726879392/Maya_sofa_three_seater_1_1_wfeygl.png",
+            "disc": "text"
+        },
+        "image14": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1726621072/Mask_group_xdl7of.png",
+            "disc": "text"
+        },
+        "image15": {
+            "url" :"https://res.cloudinary.com/dml48ptj8/image/upload/v1726621074/white_chair_rpojyy.png",
+            "disc": "text"
         }
     }
 }
