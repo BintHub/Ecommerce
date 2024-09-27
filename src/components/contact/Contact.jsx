@@ -66,11 +66,11 @@ const Contact = () => {
        </div>
     </div>
       <div>
-        <div className='text-center -mt-28 lg:mt-10'>
+        <div className='text-center mt-28 md:mt-28 lg:mt-28'>
         <h1 className='font-poppins font-semibold text-4xl'>Get In Touch With Us</h1>
         <p className='font-poppins font-medium text-base text-[#9F9F9F]'>For More Information About Our Product & Services. Please Feel Free To Drop Us <br /> An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!</p>
         </div>
-        <div className='grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-2'>
+        <div className='pl-6 grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-2'>
            <div className='max-w-[393px] min-h-[537px] md:ml-40 md:mt-10 lg:ml-80'>
              <div>
               <img className='' src= {location} alt="icon"/>
@@ -99,7 +99,8 @@ const Contact = () => {
         message:'',
       }}
       validationSchema={SignupSchema}
-      onSubmit={values => {
+      onSubmit={(values,{resetForm}) =>{
+        resetForm();
         // same shape as initial values
         console.log(values);
         axios.get('http://localhost:8000/Users/'+values.email)
@@ -125,22 +126,22 @@ const Contact = () => {
       {({ errors, touched }) => (
         <Form className='flex flex-col gap-3 -mt-40 md:ml:40 md:mt-10'>
          <label className='font-poppins font-medium text-base' htmlFor='fullName'>Your name</label>
-         <Field className='w-1/2 text-[#9F9F9F] border rounded border-[#9F9F9F] py-3' name="fullName" type="fullName"
+         <Field className='w-1/2 text-[#9F9F9F] border rounded border-[#9F9F9F] py-3 pl-4' name="fullName" type="fullName"
          placeholder='Abc'
          />
          {errors.fullName && touched.fullName ? <div className='text-red-600 text-[12px] '>{errors.fullName}</div> : null}
          <label className='font-poppins font-medium text-base' htmlFor='email'>Email address</label>
-         <Field className='w-1/2 text-[#9F9F9F] border rounded border-[#9F9F9F] py-3' name="email" type="email"
+         <Field className='w-1/2 text-[#9F9F9F] border rounded border-[#9F9F9F] py-3 pl-4' name="email" type="email"
          placeholder='Abc@def.com'
          />
          {errors.email && touched.email ? <div className='text-red-600 text-[12px] '>{errors.email}</div> : null}
          <label className='font-poppins font-medium text-base' htmlFor='subject'>Subject</label>
-         <Field className='w-1/2 text-[#9F9F9F] border rounded border-[#9F9F9F] py-3' name="subject" type="subject"
+         <Field className='w-1/2 text-[#9F9F9F] border rounded border-[#9F9F9F] py-3 pl-4' name="subject" type="subject"
          placeholder='This is an optional'
          />
          {errors.subject && touched.subject ? <div className='text-red-600 text-[12px] '>{errors.subject}</div> : null}
          <label  className='font-poppins font-medium text-base'htmlFor='message'>Message</label>
-         <Field className='w-1/2 h-20 text-[#9F9F9F] border rounded border-[#9F9F9F] py-3' name="message" type="message"
+         <Field className='w-1/2 h-20 text-[#9F9F9F] border rounded border-[#9F9F9F] py-3 pl-4' name="message" type="message"
          placeholder='Hi! i’d like to ask about'
          />
          {errors.message && touched.message ? <div className='text-red-600 text-[12px] '>{errors.message}</div> : null}

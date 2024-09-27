@@ -21,17 +21,7 @@ const CheckOut = () => {
     function handleSubmit(e) {
       e.preventDefault();
       let obj = {firstName,lastName,company,country,street,city,province,zipcode,Phone,email};
-      let formData = new FormData();
-          formData.append('company',company);
-          formData.append('country',country);
-          formData.append('street',street);
-          formData.append('city',city);
-          formData.append('province',province);
-          formData.append('zipcode',zipcode);
-          formData.append('phone',Phone);
-          formData.append('password',password);
-          formData.append('email',email);
-      console.log('form submited', JSON.stringify(formData))
+      console.log('form submited',obj)
     }
   return (
     <>
@@ -53,8 +43,8 @@ const CheckOut = () => {
      </div>
   </div>
   {/* form */}
-  <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 '>
-     <div className='w-[608px]'>
+  <div className=' w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 '>
+     <div className='w-[608px] -ml-20 md:pr-10 lg:ml-20'>
       <h1 className='font-poppins font-semibold text-4xl ml-36 py-6'>Billing details</h1>
       <form
         onSubmit={(e) => handleSubmit(e)}
@@ -99,10 +89,10 @@ const CheckOut = () => {
         <fieldset className="flex flex-col gap-2 font-poppins font-medium text-base">
           <label htmlFor="country">Country / Region</label>
           <select id ="country"  className="px-3 border border-1 py-2 mb-4">
-            <option selected>Sri lanka </option>
-            <option selected>Nigeria </option>
-            <option selected>Canada</option>
-            <option selected>Australia</option>
+            <option >Sri lanka </option>
+            <option >Nigeria </option>
+            <option >Canada</option>
+            <option >Australia</option>
             </select> 
             <input value={country}onChange={(e) => setCountry(e.target.value)} />
         </fieldset>
@@ -131,10 +121,10 @@ const CheckOut = () => {
         <fieldset className="flex  flex-col gap-2 font-poppins font-medium text-base">
           <label htmlFor="province">Province </label>
           <select id ="province" className="px-3 border border-1 py-2 mb- ">
-            <option selected>Western Province </option>
-            <option selected>Eastern Province</option>
-            <option selected>Southern Province </option>
-            <option selected>Northern Province</option>
+            <option >Western Province </option>
+            <option >Eastern Province</option>
+            <option >Southern Province </option>
+            <option >Northern Province</option>
             </select> 
             <input value={province} onChange={(e) => setProvince(e.target.value)}/>
         </fieldset>
@@ -184,7 +174,7 @@ const CheckOut = () => {
         </div>
         </form>
       </div>
-    <div className='w-[533px] h-[789px] m-10 sm:mt-4  md:-ml-10 md:w-[550px] lg:w-[533px] my-10'>
+    <div className='w-[300px] h-[789px] ml-20 sm:mt-4 md:ml-2 md:w-[500px] lg:w-[500px] my-10'>
         <h1 className='font-poppins text-2xl font-medium mt-10 md:ml-9'>Product 
           <span className='font-poppins text-base font-medium  ml-44 '>Subtotal</span></h1>
 
@@ -215,9 +205,9 @@ const CheckOut = () => {
           <p className='font-poppins text-base font-light'>Your personal data will be used to support your experience <br /> throughout this website, to manage access to your account, and <br />for other purposes described in our <strong>privacy policy.</strong></p>
          <div className='text-center'>
 
-          <button className='font-poppins font-normal text-black text-xl border border-black py-3 px-16 mt-7 rounded-xl m-2 type="submit"'>
-         Place order &nbsp;a</button>
-         </div>
+        <button onClick={(e)=>handleSubmit(e)} type="submit" className='font-poppins font-normal text-black text-xl border border-black py-3 px-16 mt-7 rounded-xl m-2'>
+         Place order</button>
+        </div>
     </div>
   </div>
   <div className='mt-16'> 

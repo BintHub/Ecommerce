@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import { Bounce, ToastContainer, toast } from 'react-toastify';
@@ -37,14 +37,14 @@ const notify = () => toast.success('Correct email !! You have successfully subsc
 export const Footer = () => (
   <>
   <hr />
-  <div className='flex flex-wrap flex-row items-center justify-center gap-28 max-h-full py-10'>
+  <div className='flex flex-wrap flex-row items-center justify-center gap-28 max-h-full py-10 mt-10 md:mt-0'>
     <div>
     <h1 className='font-poppins font-bold text-2xl -mt-14'>Funiro.</h1>
-    <p className='font-poppins font-normal text-base text-[#9F9F9F] mt-10'>400 University Drive Suite 200 Coral <br /> Gables, <br /> FL 33134 USA</p>
+    <p className='font-poppins font-normal text-base text-[#9F9F9F] mt-5'>400 University Drive Suite 200 Coral <br /> Gables, <br /> FL 33134 USA</p>
     </div>
-    <div className=''> 
+    <div className='-mt-20 md:mt-0'> 
       <h1 className='font-poppins font-medium text-base text-[#9F9F9F]'>Links</h1>
-      <ol className='mt-8'>
+      <ol className=''>
         <li className='flex flex-col gap-4'>
            <Link className='text-black text-base font-medium font-poppines' to="/home">Home</Link>
            <Link className='text-black text-base font-medium font-poppines' to="/shop">Shop</Link>
@@ -53,9 +53,9 @@ export const Footer = () => (
         </li>
       </ol>
     </div>
-    <div className='-mt-8'>
+    <div className='-mt-28 md:-mt-10'>
       <h1 className='font-poppins font-medium text-base text-[#9F9F9F]'>Helps</h1>
-      <ol className='mt-10'>
+      <ol className=''>
         <li className='flex flex-col gap-4'>
            <Link className='text-black text-base font-medium font-poppines' to="/">Payment Options</Link>
            <Link className='text-black text-base font-medium font-poppines' to="/">Returns</Link>
@@ -69,40 +69,40 @@ export const Footer = () => (
         email: '',
       }}
       validationSchema={SignupSchema}
-      onSubmit={values => {
-        // same shape as initial values
+      onSubmit= {(values,{resetForm}) =>{
+        resetForm();
+       // same shape as initial values
         console.log(values);
 
-
-        axios.get('http://localhost:8000/Users/'+values.email)
-        .then(reps=> {
-          console.log(reps.data);
-          if(reps.data.password === values.password) {
-                 setUser({isLoggedIn:true,data: {email: values.email,role: reps.data.role}})
-                notify()
-                setTimeout(() => {
-                  redir('/contact')
-                  
-                }, 3000);
-          }else{
-            notify2()
-         }
-        })
-        .catch(err=> {
-         console.log(err)
-        })
+  axios.get('http://localhost:8000/Users/'+values.email)
+  .then(reps=> {
+    console.log(reps.data);
+    if(reps.data.password === values.password) {
+           setUser({isLoggedIn:true,data: {email: values.email,role: reps.data.role}})
+          notify()
+          setTimeout(() => {
+            redir('/contact')
+            
+          }, 3000);
+    }else{
+      notify2()
+   }
+  })
+  .catch(err=> {
+   console.log(err)
+  })
       }}
     >
       {({ errors, touched }) => (
-        <Form className=' relative flex flex-row gap-2' >
-        <div>
+        <Form className=' relative flex flex-row gap-2 ' >
+        <div className=''>
         <h1 className=' absolute -top-20 left-1 font-poppins font-medium text-base text-[#9F9F9F]'>Newsletter</h1>
         </div>
          <Field className=' text-[#9F9F9F] border-b-2 border-[#9F9F9F]' name="email" type="email"
          placeholder='Enter Your Email Address'
          />
          {errors.email && touched.email ? <div className='text-red-600 text-[12px] '>{errors.email}</div> : null}
-         <button className='font-poppins text-sm font-medium text-black border-b-2 border-black'type="submit"  onClick={notify}>SUBSCRIBE</button>
+         <button className='font-poppins text-sm font-medium text-black border-b-2 border-black' type="submit"  onClick={notify}>SUBSCRIBE</button>
         </Form>
       )}
     </Formik>

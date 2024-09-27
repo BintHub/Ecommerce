@@ -6,7 +6,7 @@ import user from '../../assets/user.svg'
 import calender from '../../assets/calender.svg'
 import tag from '../../assets/tag.svg'
 import { useNavigate } from 'react-router-dom';
-import { AboutData } from "../about/AboutData";
+import { AboutData } from "../Blog/AboutData";
 
 function Pagination2({ itemsPerPage, items }) {
 
@@ -19,8 +19,8 @@ function Pagination2({ itemsPerPage, items }) {
         <div className="">
           {currentItems &&
             currentItems.map((item) => (
-              <div key={item.id} className="m-10" >
-               <Image className='w-[817px] h-[500px]' loading="lazy" cloudName="dlifiojbx" publicId={item.img} />
+              <div key={item.id} className=" w-full px-6 mt-10" >
+               <Image className='w-full h-[500px]' loading="lazy" cloudName="dlifiojbx" publicId={item.img} />
                {/* tags*/}
             <div className='' >
                <div className='flex flex-row gap-6 py-2'>
@@ -35,9 +35,9 @@ function Pagination2({ itemsPerPage, items }) {
               </div>
              </div>
           </div> 
-               <div className='font-poppins w-[730px]'>
+               <div className='font-poppins'>
                <h1 className='text-tertiary text-3xl font-medium'>{item.name}</h1>
-              <p className='text-[#898989] text-sm font-normal w-[450px] sm:w-[600px] md:w-[500px] lg:w-[750px]'>{item.disc}</p>
+              <p className='text-[#898989] text-sm font-normal sm:w-[400px] md:w-[400px] lg:w-[600px]'>{item.disc}</p>
                <button className='text-black font-normal text-sm px-2 py-2 border-black border-b-2'>{item.btn}</button>
               </div>
           </div>

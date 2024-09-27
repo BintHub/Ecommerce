@@ -3,9 +3,11 @@ import { Image } from 'cloudinary-react';
 import logo from '../../assets/Mlogo.svg'
 import arrow from '../../assets/arrow.svg'
 import rating from '../../assets/rating.svg'
+import { useNavigate } from 'react-router';
 import Pink from '../pink/Pink';
 
 const Comparison = () => {
+  let redir = useNavigate();
   return (
     <>
      <div className='relative h-[316px] flex items-center justify-center flex-col mb-20'>
@@ -25,7 +27,7 @@ const Comparison = () => {
      </div>
     </div>
    </div>
-   <div className='grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 ml-20'>
+   <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  md:ml-10 lg:ml-20'>
      <div>
      <div className='mb-[7.3rem] m-10'>
         <h1 className='font-poppins font-medium text-2xl '>Go to Product <br /> page for more <br /> Products</h1>
@@ -73,12 +75,12 @@ const Comparison = () => {
      </div>
 
      <div>
-       <div className='bg-secondary w-[271px] h-[160px] py-3 rounded-md'>
+       <div className='bg-secondary w-[271px] h-[160px] py-3 rounded-md ml-10'>
         <Image loading='lazy' cloudName="ddml48ptj8" 
          publicId= "https://res.cloudinary.com/dml48ptj8/image/upload/v1726980988/Asgaard_sofa_3_auwo9h.png">
         </Image>
        </div>
-       <div className='font-poppins font-normal text-xl mb-10'>
+       <div className='font-poppins font-normal text-xl mb-10 ml-10'>
         <h2>Asgaard Sofa</h2>
         <p>Rs. 250,000.00</p>
         <div className='flex '>
@@ -122,16 +124,16 @@ const Comparison = () => {
         <p>1 year</p>
         </div>
 
-        <button className='h-12 w-60 border mb-16 bg-primary font-normal text-xl px-2 text-white'>Add to Cart</button>
+        <button onClick={()=>redir('/cart/')} className='h-12 w-60 ml-10 border mb-16 bg-primary font-normal text-xl px-2 text-white'>Add to Cart</button>
      </div>
 
      <div>
-      <div className='bg-secondary w-[271px] h-[160px] rounded-md'>
+      <div className='bg-secondary w-[271px] h-[160px] rounded-md ml-10'>
       <Image loading='lazy' cloudName="ddml48ptj8" 
        publicId= "https://res.cloudinary.com/dml48ptj8/image/upload/c_crop,w_271,h_160,g_auto/v1726985030/Outdoor_sofa_set_1_1_a4qgyr.png">
       </Image>
       </div>
-      <div className='font-poppins font-normal text-xl mb-10 '>
+      <div className='font-poppins font-normal text-xl mb-10 ml-10 '>
         <h2>Outdoor Sofa Set</h2>
         <p>Rs. 224,000.00</p>
         <div className='flex'>
@@ -176,14 +178,14 @@ const Comparison = () => {
         <p>3 Months</p>
        </div>
 
-       <button className='h-12 w-60 border mb-16 bg-primary font-normal text-xl px-2 text-white'>Add to Cart</button>
+       <button onClick={()=>redir('/cart/')} className='h-12  ml-10 w-60 border mb-16 bg-primary font-normal text-xl px-2 text-white'>Add to Cart</button>
      </div>
   
      <div>
-       <div>
+       <div className='text-center'>
        <h1  className='font-poppins font-semibold text-2xl'>Add a Product</h1>
         <form >
-          <fieldset className="flex flex-col gap-2 font-poppins font-semibold text-base">
+          <fieldset className="flex flex-col gap-2 font-poppins font-semibold text-base items-center">
            <select id ="product" className="px-3 border border-1 py-2 mb-4 w-48 bg-primary text-white">
             <option selected>Choose a product</option>
             <option selected>Asgaard Sofa </option>

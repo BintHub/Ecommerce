@@ -1,13 +1,12 @@
 import React from "react";
 import { Image } from "cloudinary-react";
-import { shopData } from "../pagination/shopData";
-import rating from "../../assets/rating.svg";
-import purple from "../../assets/purple.svg";
-import black from "../../assets/black.svg";
-import gold from "../../assets/gold.svg";
-import fb from "../../assets/fb.svg";
-import linkin from "../../assets/linkin.svg";
-import x from "../../assets/twitter.svg";
+import rating from "../../assets/rating.svg"
+import purple from "../../assets/purple.svg"
+import black from "../../assets/black.svg"
+import gold from "../../assets/gold.svg"
+import fb from "../../assets/fb.svg"
+import linkin from "../../assets/linkin.svg"
+import x from "../../assets/twitter.svg"
 import { images } from "../../data/product.json";
 
 const ProductDisplay = () => {

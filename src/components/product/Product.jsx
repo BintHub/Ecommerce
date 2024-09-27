@@ -1,24 +1,40 @@
 import React, { useState } from 'react'
 import {Image} from 'cloudinary-react';
-import {images} from '../../data/product.json'
+import {images} from '../../data/product.json';
 import share from '../../assets/share.svg'
 import compare from '../../assets/compare.svg'
 import like from '../../assets/like.svg'
 import { useNavigate } from 'react-router-dom';
 import Shop from '../shop/Shop';
+import { Bounce, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 const Product = () => {
   let [shop,setShop] = useState(Shop);
   let redir = useNavigate();
-  return (
+
+  const handleShare = () => toast.success('copied!', {
+    position: "top-center",
+    autoClose: 3000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+    transition: Bounce,
+    });
+   return (
     <>
   <div className='text-center mt-12 mb-6'>
       <h2 className='font-poppins font-bold text-[#333333] text-3xl'>Our Products</h2>
   </div>
  <div className=''>
-   <div className='ml-16 h-full max-w-[1236px] items-center grid grid-col-1 md:grid-cols-2 lg:grid-cols-4'>
-    <div className='group relative max-w-60 max-h-[301px] w-full md:mb-16 sm:mx-auto mb-20'>
-      <Image loading='lazy'
+   <div className='h-full w-full items-center grid grid-col-1 md:grid-cols-2 lg:grid-cols-4'>
+    <div className='group relative md:w-60 md:h-[301px] w-full mb-10 sm:mb-10  md:mb-20 sm:mx-auto lg:mb-20'>
+      <Image className='w-full' loading='lazy'
         cloudName= {images.cloudName}
         publicId= {images.image1.url} />
         <div className='group-hover:flex flex-col hidden absolute left-0 top-0 w-full h-[54vh] bg-[#3A3A3A] bg-opacity-50' >
@@ -27,10 +43,10 @@ const Product = () => {
           </div>
           <div className='flex flex-row gap-4 py-6 ml-4'>
             <div>
-            <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {share} alt="icon"/> Share</button>
+            <button onClick={handleShare} className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {share} alt="icon"/> Share</button>
             </div>
             <div>
-            <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {compare} alt="icon"/>Compare</button>
+            <button onClick={()=> redir('/shop/') } className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {compare} alt="icon"/>Compare</button>
             </div>
             <div>
             <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {like} alt="icon"/>Like</button>
@@ -45,8 +61,8 @@ const Product = () => {
                <span className='text-[#B0B0B0] font-normal text-base px-2 line-through'>Rp 3.500.000</span></p>
             </div>
       </div>
-    <div className=' group relative max-w-60 max-h-[301px] w-full md:mb-16 sm:mx-auto mb-20'>
-      <Image loading='lazy'
+      <div className='group relative md:w-60 md:h-[301px] w-full mb-10 sm:mb-10 md:mb-20 sm:mx-auto lg:mb-20'>
+      <Image className='w-full' loading='lazy'
         cloudName= {images.cloudName}
         publicId= {images.image2.url} />
 <div className='group-hover:flex flex-col hidden absolute left-0 top-0 w-full h-[54vh] bg-[#3A3A3A] bg-opacity-50' >
@@ -55,10 +71,10 @@ const Product = () => {
           </div>
           <div className='flex flex-row gap-4 py-6 ml-4'>
             <div>
-            <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {share} alt="icon"/> Share</button>
+            <button onClick={handleShare} className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {share} alt="icon"/> Share</button>
             </div>
             <div>
-            <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {compare} alt="icon"/>Compare</button>
+            <button onClick={()=> redir('/shop/') } className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {compare} alt="icon"/>Compare</button>
             </div>
             <div>
             <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {like} alt="icon"/>Like</button>
@@ -71,8 +87,8 @@ const Product = () => {
             <p className='text-tertiary  font-semibold text-xl'>Rp 2.500.000</p>
           </div>
  </div>
-    <div className='group relative max-w-60 max-h-[301px] w-full sm:mx-auto mb-20'>
-      <Image loading='lazy'
+ <div className='group relative md:w-60 md:h-[301px] w-full mb-10 sm:mb-10  sm:mx-auto lg:mb-20'>
+      <Image  className='w-full'loading='lazy'
         cloudName= {images.cloudName}
         publicId= {images.image3.url} />
         <div className='group-hover:flex flex-col hidden absolute left-0 top-0 w-full h-[54vh] bg-[#3A3A3A] bg-opacity-50' >
@@ -81,10 +97,10 @@ const Product = () => {
           </div>
           <div className='flex flex-row gap-4 py-6 ml-4'>
             <div>
-            <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {share} alt="icon"/> Share</button>
+            <button onClick={handleShare} className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {share} alt="icon"/> Share</button>
             </div>
             <div>
-            <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {compare} alt="icon"/>Compare</button>
+            <button onClick={()=> redir('/shop/') } className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {compare} alt="icon"/>Compare</button>
             </div>
             <div>
             <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {like} alt="icon"/>Like</button>
@@ -99,8 +115,8 @@ const Product = () => {
                <span className='text-[#B0B0B0] font-normal text-base px-2 line-through'>Rp 14.000.000</span></p>
             </div>
       </div>
-    <div className='group relative max-w-60 max-h-[301px] w-full sm:mx-auto mb-20'>
-      <Image loading='lazy'
+      <div className='group relative md:w-60 md:h-[301px] w-full mb-10 sm:mb-10  sm:mx-auto lg:mb-20'>
+      <Image className='w-full' loading='lazy'
         cloudName= {images.cloudName}
         publicId= {images.image4.url} />
         <div className='group-hover:flex flex-col hidden absolute left-0 top-0 w-full h-[54vh] bg-[#3A3A3A] bg-opacity-50' >
@@ -109,10 +125,10 @@ const Product = () => {
           </div>
           <div className='flex flex-row gap-4 py-6 ml-4'>
             <div>
-            <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {share} alt="icon"/> Share</button>
+            <button onClick={handleShare} className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {share} alt="icon"/> Share</button>
             </div>
             <div>
-            <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {compare} alt="icon"/>Compare</button>
+            <button onClick={()=> redir('/shop/') } className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {compare} alt="icon"/>Compare</button>
             </div>
             <div>
             <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {like} alt="icon"/>Like</button>
@@ -127,9 +143,9 @@ const Product = () => {
             </div>
       </div>
   </div>
-  <div className='ml-16 h-full max-w-[1236px] items-center grid grid-col-1 md:grid-cols-2 lg:grid-cols-4'>
-    <div className='group relative max-w-60 max-h-[301px] w-full  md:mb-16 sm:mx-auto mb-20'>
-      <Image loading='lazy'
+  <div className='h-full w-full items-center grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 md:mt-16'>
+  <div className='group relative md:w-60 md:h-[301px] w-full mb-10 sm:mb-10 sm:mx-auto md:mb-20 lg:mb-20'>
+      <Image  className='w-full'loading='lazy'
         cloudName= {images.cloudName}
         publicId= {images.image5.url} />
         <div className='group-hover:flex flex-col hidden absolute left-0 top-0 w-full h-[54vh] bg-[#3A3A3A] bg-opacity-50' >
@@ -138,10 +154,10 @@ const Product = () => {
           </div>
           <div className='flex flex-row gap-4 py-6 ml-4'>
             <div>
-            <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {share} alt="icon"/> Share</button>
+            <button onClick={handleShare} className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {share} alt="icon"/> Share</button>
             </div>
             <div>
-            <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {compare} alt="icon"/>Compare</button>
+            <button onClick={()=> redir('/shop/') } className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {compare} alt="icon"/>Compare</button>
             </div>
             <div>
             <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {like} alt="icon"/>Like</button>
@@ -154,8 +170,8 @@ const Product = () => {
             <p className='text-tertiary  font-semibold text-xl'>Rp 1.500.000</p>
             </div>
       </div>
-    <div className='group relative max-w-60 max-h-[301px] w-full  md:mb-16 sm:mx-auto mb-20'>
-      <Image loading='lazy'
+      <div className='group relative md:w-60 md:h-[301px] w-full mb-10 sm:mb-10 sm:mx-auto md:mb-20 lg:mb-20'>
+      <Image className='w-full' loading='lazy'
         cloudName= {images.cloudName}
         publicId= {images.image6.url} />
         <div className='group-hover:flex flex-col hidden absolute left-0 top-0 w-full h-[54vh] bg-[#3A3A3A] bg-opacity-50' >
@@ -164,10 +180,10 @@ const Product = () => {
           </div>
           <div className='flex flex-row gap-4 py-6 ml-4'>
             <div>
-            <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {share} alt="icon"/> Share</button>
+            <button onClick={handleShare} className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {share} alt="icon"/> Share</button>
             </div>
             <div>
-            <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {compare} alt="icon"/>Compare</button>
+            <button onClick={()=> redir('/shop/') } className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {compare} alt="icon"/>Compare</button>
             </div>
             <div>
             <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {like} alt="icon"/>Like</button>
@@ -181,8 +197,8 @@ const Product = () => {
             <p className='text-tertiary  font-semibold text-xl'>Rp 150.000</p>
             </div>
       </div>
-    <div className='group relative max-w-60 max-h-[301px] w-full sm:mx-auto mb-20'>
-      <Image loading='lazy'
+      <div className='group relative md:w-60 md:h-[301px] w-full mb-10 sm:mb-10  sm:mx-auto lg:mb-20'>
+        <Image className='w-full' loading='lazy'
         cloudName= {images.cloudName}
         publicId= {images.image7.url} />
         <div className='group-hover:flex flex-col hidden absolute left-0 top-0 w-full h-[54vh] bg-[#3A3A3A] bg-opacity-50' >
@@ -191,10 +207,10 @@ const Product = () => {
           </div>
           <div className='flex flex-row gap-4 py-6 ml-4'>
             <div>
-            <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {share} alt="icon"/> Share</button>
+            <button onClick={handleShare} className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {share} alt="icon"/> Share</button>
             </div>
             <div>
-            <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {compare} alt="icon"/>Compare</button>
+            <button onClick={()=> redir('/shop/') } className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {compare} alt="icon"/>Compare</button>
             </div>
             <div>
             <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {like} alt="icon"/>Like</button>
@@ -209,8 +225,8 @@ const Product = () => {
                <span className='text-[#B0B0B0] font-normal text-base px-2 line-through'>Rp 14.000.000</span></p>
             </div>
       </div>
-    <div className='group relative  max-w-60 max-h-[301px] w-full  md:mb-16 sm:mx-auto'>
-      <Image loading='lazy'
+      <div className='group relative md:w-60 md:h-[301px] w-full mb-10 sm:mb-10  sm:mx-auto lg:mb-20'>
+      <Image className='w-full' loading='lazy'
         cloudName= {images.cloudName}
         publicId= {images.image8.url} />
         <div className='group-hover:flex flex-col hidden absolute left-0 top-0 w-full h-[54vh] bg-[#3A3A3A] bg-opacity-50' >
@@ -219,10 +235,10 @@ const Product = () => {
           </div>
           <div className='flex flex-row gap-4 py-6 ml-4'>
             <div>
-            <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {share} alt="icon"/> Share</button>
+            <button onClick={handleShare} className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {share} alt="icon"/> Share</button>
             </div>
             <div>
-            <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {compare} alt="icon"/>Compare</button>
+            <button onClick={()=> redir('/shop/')}className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {compare} alt="icon"/>Compare</button>
             </div>
             <div>
             <button className='text-white flex font-poppins font-semibold'><img className='pt-1' src= {like} alt="icon"/>Like</button>
@@ -237,8 +253,8 @@ const Product = () => {
             </div>
     </div>
   </div>  
-  <div className=' text-center'>
-  <button onClick={()=> redir('/shop/') } className='h-12 w-60 border mb-16 border-primary font-semibold text-base text-primary px-2'>
+  <div className=' text-center mt-5 lg:mt-10'>
+  <button onClick={()=> redir('/shop/')} className='h-12 w-60 border mb-16 border-primary font-semibold text-base text-primary px-2'>
     Show More</button></div>  
 </div>
     </>

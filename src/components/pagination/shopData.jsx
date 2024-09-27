@@ -1,13 +1,13 @@
 export const shopData = [
     {
         id: 1,
-        img: 'https://res.cloudinary.com/dml48ptj8/image/upload/v1725867623/Images_m4nguu.png',
-        name: 'Syltherine',
-        price: 'Rp 2.500.000',
+        img: 'https://res.cloudinary.com/dml48ptj8/image/upload/c_crop,w_284,h_301/v1726879427/Group_95_xcv6dy.png',
+        name: 'Asgaard sofa',
+        price: 'Rp 250,000.00',
         oldPrice: 'Rp 3.500.000',
         disc: 'Stylish cafe chair',
         discount: '-30%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 2,
@@ -16,8 +16,8 @@ export const shopData = [
         price: 'Rp 2.500.000',
         oldPrice: false,
         disc: 'Stylish cafe chair',
-        discount: false
-
+        discount: false,
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ export const shopData = [
         oldPrice: 'Rp 14.000.000',
         disc: 'Luxury big sofa',
         discount: '-50%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 4,
@@ -36,8 +36,8 @@ export const shopData = [
         price: 'Rp 500.000',
         oldPrice: false,
         disc: 'Outdoor bar table and stool',
-        discount: 'New'
-
+        discount: 'New',
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ export const shopData = [
         oldPrice: 'Rp 3.500.000',
         disc: 'Stylish cafe chair',
         discount: '-30%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id:6,
@@ -56,7 +56,8 @@ export const shopData = [
         price: 'Rp 2.500.000',
         oldPrice: false,
         disc: 'Stylish cafe chair',
-        discount: false
+        discount: false,
+        cloudName:"ddml48ptj8" 
 
     },
     {
@@ -67,7 +68,7 @@ export const shopData = [
         oldPrice: 'Rp 14.000.000',
         disc: 'Luxury big sofa',
         discount: '-50%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 8,
@@ -76,7 +77,8 @@ export const shopData = [
         price: 'Rp 500.000',
         oldPrice: false,
         disc: 'Outdoor bar table and stool',
-        discount: 'New'
+        discount: 'New',
+        cloudName:"ddml48ptj8" 
 
     },
     {
@@ -87,7 +89,7 @@ export const shopData = [
         oldPrice: 'Rp 3.500.000',
         disc: 'Stylish cafe chair',
         discount: '-30%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 10,
@@ -96,8 +98,8 @@ export const shopData = [
         price: 'Rp 2.500.000',
         oldPrice: false,
         disc: 'Stylish cafe chair',
-        discount: false
-
+        discount: false,
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 11,
@@ -107,7 +109,7 @@ export const shopData = [
         oldPrice: 'Rp 14.000.000',
         disc: 'Luxury big sofa',
         discount: '-50%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id:12,
@@ -116,8 +118,8 @@ export const shopData = [
         price: 'Rp 500.000',
         oldPrice: false,
         disc: 'Outdoor bar table and stool',
-        discount: 'New'
-
+        discount: 'New',
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 13,
@@ -127,7 +129,7 @@ export const shopData = [
         oldPrice: 'Rp 3.500.000',
         disc: 'Stylish cafe chair',
         discount: '-30%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 14,
@@ -136,8 +138,8 @@ export const shopData = [
         price: 'Rp 2.500.000',
         oldPrice: false,
         disc: 'Stylish cafe chair',
-        discount: false
-
+        discount: false,
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 15,
@@ -147,7 +149,7 @@ export const shopData = [
         oldPrice: 'Rp 14.000.000',
         disc: 'Luxury big sofa',
         discount: '-50%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 16,
@@ -156,7 +158,8 @@ export const shopData = [
         price: 'Rp 500.000',
         oldPrice: false,
         disc: 'Outdoor bar table and stool',
-        discount: 'New'
+        discount: 'New', 
+        cloudName:"ddml48ptj8" 
 
     },
     {
@@ -167,7 +170,7 @@ export const shopData = [
         oldPrice: 'Rp 3.500.000',
         disc: 'Stylish cafe chair',
         discount: '-30%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 18,
@@ -176,8 +179,8 @@ export const shopData = [
         price: 'Rp 2.500.000',
         oldPrice: false,
         disc: 'Stylish cafe chair',
-        discount: false
-
+        discount: false,
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 19,
@@ -187,7 +190,7 @@ export const shopData = [
         oldPrice: 'Rp 14.000.000',
         disc: 'Luxury big sofa',
         discount: '-50%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 20,
@@ -196,8 +199,8 @@ export const shopData = [
         price: 'Rp 500.000',
         oldPrice: false,
         disc: 'Outdoor bar table and stool',
-        discount: 'New'
-
+        discount: 'New',
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 21,
@@ -207,7 +210,7 @@ export const shopData = [
         oldPrice: 'Rp 3.500.000',
         disc: 'Stylish cafe chair',
         discount: '-30%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 22,
@@ -216,8 +219,8 @@ export const shopData = [
         price: 'Rp 2.500.000',
         oldPrice: false,
         disc: 'Stylish cafe chair',
-        discount: false
-
+        discount: false,
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 23,
@@ -226,7 +229,8 @@ export const shopData = [
         price: 'Rp 7.000.000',
         oldPrice: 'Rp 14.000.000',
         disc: 'Luxury big sofa',
-        discount: '-50%',
+        discount: '-50%', 
+         cloudName:"ddml48ptj8" 
 
     },
     {
@@ -236,8 +240,8 @@ export const shopData = [
         price: 'Rp 500.000',
         oldPrice: false,
         disc: 'Outdoor bar table and stool',
-        discount: 'New'
-
+        discount: 'New',
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 25,
@@ -247,7 +251,7 @@ export const shopData = [
         oldPrice: 'Rp 3.500.000',
         disc: 'Stylish cafe chair',
         discount: '-30%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 26,
@@ -256,8 +260,8 @@ export const shopData = [
         price: 'Rp 2.500.000',
         oldPrice: false,
         disc: 'Stylish cafe chair',
-        discount: false
-
+        discount: false,
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 27,
@@ -267,7 +271,7 @@ export const shopData = [
         oldPrice: 'Rp 14.000.000',
         disc: 'Luxury big sofa',
         discount: '-50%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 28,
@@ -276,8 +280,8 @@ export const shopData = [
         price: 'Rp 500.000',
         oldPrice: false,
         disc: 'Outdoor bar table and stool',
-        discount: 'New'
-
+        discount: 'New',
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 29,
@@ -287,7 +291,7 @@ export const shopData = [
         oldPrice: 'Rp 3.500.000',
         disc: 'Stylish cafe chair',
         discount: '-30%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 30,
@@ -296,8 +300,8 @@ export const shopData = [
         price: 'Rp 2.500.000',
         oldPrice: false,
         disc: 'Stylish cafe chair',
-        discount: false
-
+        discount: false,
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 31,
@@ -307,7 +311,7 @@ export const shopData = [
         oldPrice: 'Rp 14.000.000',
         disc: 'Luxury big sofa',
         discount: '-50%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 32,
@@ -316,8 +320,8 @@ export const shopData = [
         price: 'Rp 500.000',
         oldPrice: false,
         disc: 'Outdoor bar table and stool',
-        discount: 'New'
-
+        discount: 'New',
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 33,
@@ -327,7 +331,7 @@ export const shopData = [
         oldPrice: 'Rp 3.500.000',
         disc: 'Stylish cafe chair',
         discount: '-30%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 34,
@@ -336,8 +340,8 @@ export const shopData = [
         price: 'Rp 2.500.000',
         oldPrice: false,
         disc: 'Stylish cafe chair',
-        discount: false
-
+        discount: false,
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 35,
@@ -347,7 +351,7 @@ export const shopData = [
         oldPrice: 'Rp 14.000.000',
         disc: 'Luxury big sofa',
         discount: '-50%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 36,
@@ -356,8 +360,8 @@ export const shopData = [
         price: 'Rp 500.000',
         oldPrice: false,
         disc: 'Outdoor bar table and stool',
-        discount: 'New'
-
+        discount: 'New',
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 37,
@@ -367,7 +371,7 @@ export const shopData = [
         oldPrice: 'Rp 3.500.000',
         disc: 'Stylish cafe chair',
         discount: '-30%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 38,
@@ -376,8 +380,8 @@ export const shopData = [
         price: 'Rp 2.500.000',
         oldPrice: false,
         disc: 'Stylish cafe chair',
-        discount: false
-
+        discount: false,
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 39,
@@ -387,7 +391,7 @@ export const shopData = [
         oldPrice: 'Rp 14.000.000',
         disc: 'Luxury big sofa',
         discount: '-50%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 40,
@@ -396,8 +400,8 @@ export const shopData = [
         price: 'Rp 500.000',
         oldPrice: false,
         disc: 'Outdoor bar table and stool',
-        discount: 'New'
-
+        discount: 'New',
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 41,
@@ -407,7 +411,7 @@ export const shopData = [
         oldPrice: 'Rp 3.500.000',
         disc: 'Stylish cafe chair',
         discount: '-30%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 42,
@@ -416,8 +420,8 @@ export const shopData = [
         price: 'Rp 2.500.000',
         oldPrice: false,
         disc: 'Stylish cafe chair',
-        discount: false
-
+        discount: false,
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 43,
@@ -427,7 +431,7 @@ export const shopData = [
         oldPrice: 'Rp 14.000.000',
         disc: 'Luxury big sofa',
         discount: '-50%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 44,
@@ -436,8 +440,8 @@ export const shopData = [
         price: 'Rp 500.000',
         oldPrice: false,
         disc: 'Outdoor bar table and stool',
-        discount: 'New'
-
+        discount: 'New',
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 45,
@@ -447,7 +451,7 @@ export const shopData = [
         oldPrice: 'Rp 3.500.000',
         disc: 'Stylish cafe chair',
         discount: '-30%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 46,
@@ -456,8 +460,8 @@ export const shopData = [
         price: 'Rp 2.500.000',
         oldPrice: false,
         disc: 'Stylish cafe chair',
-        discount: false
-
+        discount: false,
+        cloudName:"ddml48ptj8" 
     },
     {
         id: 47,
@@ -467,7 +471,7 @@ export const shopData = [
         oldPrice: 'Rp 14.000.000',
         disc: 'Luxury big sofa',
         discount: '-50%',
-
+        cloudName:"ddml48ptj8" 
     },
     {
         id:48,
@@ -476,7 +480,7 @@ export const shopData = [
         price: 'Rp 500.000',
         oldPrice: false,
         disc: 'Outdoor bar table and stool',
-        discount: 'New'
-
+        discount: 'New',
+        cloudName:"ddml48ptj8" 
     }
 ]
